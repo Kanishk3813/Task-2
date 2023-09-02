@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
+    <title>flip a card</title>
+</head>
+<body>
+    <div class="main">    
+    <div class="new flex justify-center h-screen items-center ">
+        <div class="box border-4 font-bold bg-sky-500 border-black w-64 h-52 flex justify-center items-center text-2xl rounded-lg">
+            <div id="text">
+            Hello World!
+        </div>
+        </div>   
+        <button class="border-2 border-black font-mono bg-sky-400 flex w-20 h-9 justify-center items-center relative top-40 right-44 rounded-lg hover:bg-sky-700" onclick="myButton()">Click Me</button>      
+    </div>
+
+    <script>
+        function myButton() {
+          var x = document.getElementById("text");
+          if (x.innerHTML === "Hello World!") {
+            x.innerHTML = "I Need A &lt;br&gt;";
+          } else {
+            x.innerHTML = "Hello World!";
+          }
+        }
+        </script>
+</div>
+</body>
+</html>
